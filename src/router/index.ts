@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Game from "../view/Game.vue";
+import GameAuto from "../view/GameAuto.vue";
 import MapEdit from "../view/MapEdit.vue";
 
 export const router = createRouter({
@@ -14,6 +15,11 @@ export const router = createRouter({
       name: "Game",
       path: "/game",
       component: Game,
+    },
+    {
+      name: "GameAuto",
+      path: "/game-auto",
+      component: GameAuto,
     },
     {
       path: "/mapEdit",
